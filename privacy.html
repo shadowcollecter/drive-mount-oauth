@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Personal Drive Access local rclone OAuth application.">
+  <meta name="robots" content="noindex">
+  <title>Privacy Policy | Personal Drive Access</title>
+  <link rel="canonical" href="https://shadowcollecter.github.io/drive-mount-oauth/privacy.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="./">Personal Drive Access</a>
+      <nav aria-label="Main navigation">
+        <a href="./">Overview</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="inner">
+    <p class="eyebrow">Personal Drive Access</p>
+    <h1>Privacy Policy</h1>
+    <p class="lead">This policy covers Personal Drive Access, a personal OAuth application used with a local rclone client.</p>
+    <p class="updated">Effective date: October 18, 2026</p>
+
+    <section aria-labelledby="access">
+      <h2 id="access">Data accessed</h2>
+      <p>When authorized by the operator, the client accesses Google Drive file and folder metadata, such as names, identifiers, sizes, and modification times, and file contents needed for requested transfers or file operations. The client also uses OAuth access and refresh tokens to authenticate those requests. Basic account information may be used to confirm which Google account is connected.</p>
+    </section>
+
+    <section aria-labelledby="use">
+      <h2 id="use">How data is used</h2>
+      <p>Data is used only to carry out the operator's file storage and management operations, including listing, reading, uploading, downloading, copying, moving, and deleting files, or accessing files through a local mount. Broad Google Drive permission supports management of existing files as well as files created by the client.</p>
+      <p>The application does not use Google user data for advertising, sale, profiling, or training AI models. Use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">Storage and protection</h2>
+      <p>OAuth credentials and tokens are stored in a private rclone configuration on the operator's computer. File data may be cached locally to support filesystem access. Local logs and verification reports may contain filenames and operational metadata. These files are protected by local operating-system permissions.</p>
+      <p>Drive files remain in the operator's Google account until the operator changes or deletes them. This application does not operate a separate backend that stores Drive contents or authentication tokens.</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Sharing and transfers</h2>
+      <p>Authentication requests and file operations communicate directly with Google's services. The application does not sell Google user data or send Drive contents or tokens to advertising services, analytics providers, or the rclone project. Sharing a file through Google Drive is controlled by the operator.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">Retention and removal</h2>
+      <p>Local cached data is retained according to the operator's rclone configuration. Credentials remain until removed by the operator or revoked. To stop access, stop the local rclone mount or transfer process, revoke the application's access in <a href="https://myaccount.google.com/connections">Google Account connections</a>, and remove its local configuration and cache when they are no longer needed.</p>
+      <p>Removing this client does not automatically delete files from Google Drive. The operator can manage or delete those files directly in Google Drive.</p>
+    </section>
+
+    <section aria-labelledby="website">
+      <h2 id="website">This website</h2>
+      <p>These static informational pages are hosted by GitHub Pages. They do not include analytics, advertising, sign-in forms, or application cookies. GitHub may process ordinary website request information under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Google's services are governed by <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact and changes</h2>
+      <p>Contact the operator through the <a href="https://github.com/shadowcollecter/drive-mount-oauth/issues">project's GitHub issues</a>. Reports there are public; do not include tokens or private file contents. Changes to this policy will be posted here with an updated effective date.</p>
+    </section>
+  </main>
+  <footer class="inner">
+    <p><a href="./">Personal Drive Access</a></p>
+  </footer>
+</body>
+</html>

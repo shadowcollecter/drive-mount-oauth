@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Drive Access is a local rclone client for managing the authorized user's own Google Drive files.">
+  <meta name="robots" content="noindex">
+  <title>Personal Drive Access</title>
+  <link rel="canonical" href="https://shadowcollecter.github.io/drive-mount-oauth/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="./">Personal Drive Access</a>
+      <nav aria-label="Main navigation">
+        <a href="./" aria-current="page">Overview</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main class="inner">
+    <p class="eyebrow">Personal desktop client</p>
+    <h1>Personal Drive Access</h1>
+    <p class="lead">Access to the operator's own Google Drive from their own computer, using rclone.</p>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">Purpose</h2>
+      <p>This is a personal Google Cloud OAuth application for file storage and management. It supplies OAuth credentials to a locally installed <a href="https://rclone.org/">rclone</a> client.</p>
+      <p>The client can list, read, upload, download, and manage files and folders in the Google Drive account authorized by the operator. It can also present those files through a filesystem mount on the operator's computer. File transfers take place directly between that computer and Google's services.</p>
+    </section>
+
+    <section aria-labelledby="authorization">
+      <h2 id="authorization">Authorization and permissions</h2>
+      <p>The operator signs in through Google's OAuth consent screen and grants the client permission to access Google Drive. Broad Drive access is used to manage existing files as well as newly uploaded files. Access can be revoked at any time through <a href="https://myaccount.google.com/connections">Google Account connections</a>.</p>
+      <p>This site does not offer a public sign-in service. It does not receive Google credentials, OAuth tokens, or the contents of Drive files.</p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy and contact</h2>
+      <p>The <a href="privacy.html">privacy policy</a> explains what the client accesses, where credentials and cached files are kept, and how access can be removed.</p>
+      <p>For questions, contact the operator through the <a href="https://github.com/shadowcollecter/drive-mount-oauth/issues">project's GitHub issues</a>. Issue reports are public; credential or file contents are not needed for support.</p>
+    </section>
+
+    <section aria-labelledby="terms">
+      <h2 id="terms">Terms of use</h2>
+      <p>This application is intended for the operator's personal use. Google Drive remains subject to Google's terms and the storage account's applicable policies. Rclone is provided under its own license. This personal application is not an official Google or rclone project service.</p>
+    </section>
+  </main>
+  <footer class="inner">
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</body>
+</html>
